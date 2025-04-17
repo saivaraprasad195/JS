@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Employee Database</h1>
+      <button class="add_employee">Add Employee</button>
+    </div>
+
+    <div class="main-container">
+      <!-- Employee List -->
+      <div class="employee_names">
+        <h5 class="heading">Employee Names</h5>
+        <div class="employee_names-list"></div>
+      </div>
+      <!--  -->
+      <hr />
+      <!-- Employee Details -->
+      <div class="employee_details-container"></div>
+    </div>
+
+    <div class="modal_overlay">
+      <form class="addEmployee_form">
+        <input
+          type="text"
+          name="firstName"
+          id=""
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          name="lastName"
+          id=""
+          placeholder="Last Name"
+          required
+        />
+        <input
+          type="number"
+          name="age"
+          placeholder="Age"
+          required
+          maxlength="2"
+        />
+        <input type="email" name="email" id="" placeholder="Email" required />
+        <input
+          type="number"
+          name="contactNumber"
+          id=""
+          placeholder="Mobile Number"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          required
+        />
+        <input
+          type="text"
+          name="address"
+          id=""
+          placeholder="Address"
+          required
+        />
+        <input type="date" name="dob" id="" placeholder="DOB" required />
+        <input type="submit" value="Submit" class="form_submit" />
+      </form>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

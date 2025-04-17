@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.main-container {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  min-height: 400px;
+  width: 100%;
+}
+
+h5 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.employee_names {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+}
+
+.employee_names-list {
+  overflow-y: auto;
+  margin-top: 8px;
+}
+
+.employee_item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-block: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.employee_details-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    justify-content: start;
+    align-items: center;
+}
+
+.employee_details-container > img{
+    width: 100px;
+}
+
+.employee_item:hover,
+.selected {
+  background-color: rgb(220, 216, 216);
+}
+
+.add_employee {
+  background-color: rgb(220, 216, 216);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add_employee:hover {
+  background-color: rgb(198, 195, 195);
+}
+
+.modal_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.addEmployee_form{
+    background-color: aliceblue;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.addEmployee_form > input{
+    height: 30px;
+    border-radius: 7px;
+    padding-inline: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.addEmployee_form > input::-webkit-inner-spin-button{
+    display: none;
+}
+
+.form_submit{
+    border: none;
+    background-color: rgb(177, 179, 177);
+    font-weight: 500;
+}
