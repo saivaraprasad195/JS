@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="set_time">
+      <h2>Set Time :</h2>
+      <div class="input_container">
+        <input
+          type="number"
+          class="hours"
+          name="hours"
+          min="00"
+          max="99"
+          required
+          placeholder="HH"
+        />
+        <span>:</span>
+        <input
+          type="number"
+          class="minutes"
+          name="minutes"
+          min="00"
+          max="59"
+          required
+          placeholder="MM"
+        />
+        <span>:</span>
+
+        <input
+          type="number"
+          class="seconds"
+          name="seconds"
+          min="00"
+          max-value="59"
+          required
+          placeholder="SS"
+        />
+      </div>
+      <button class="start_timer">Start timer</button>
+    </div>
+    <div class="timers_container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
